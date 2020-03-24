@@ -36,13 +36,6 @@ namespace VideoTracksDemo
             this.InitializeComponent();
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-           
-            
-
-        }
-
         private void createVideoTrackMenu() {
             Debug.WriteLine($"creating videoTrackMenu ");
             if (videoTrackCount > 1) {
