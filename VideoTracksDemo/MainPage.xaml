@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="VideoTracksDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VideoTracksDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="using:Windows.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+
+        <StackPanel >
+            <muxc:MenuBar Name="menubar">
+                <muxc:MenuBarItem Title="File" Name="menuBarItem">
+                    <MenuFlyoutItem Text="Open File" Click="Open_File">
+                        <MenuFlyoutItem.KeyboardAccelerators>
+                            <KeyboardAccelerator Modifiers="Control" Key="O"/>
+                        </MenuFlyoutItem.KeyboardAccelerators>
+                    </MenuFlyoutItem>
+                    <MenuFlyoutSubItem Text="VideoTrack" Name="videoTrack">
+                        
+                    </MenuFlyoutSubItem>
+
+                </muxc:MenuBarItem>
+            </muxc:MenuBar>
+        </StackPanel>
+        <MediaPlayerElement  Margin="100" VerticalAlignment="Bottom" x:Name="mediaplayerElement" AreTransportControlsEnabled="True"></MediaPlayerElement>
+    </StackPanel>
+</Page>
